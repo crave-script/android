@@ -58,7 +58,7 @@ git clone https://github.com/StatiXOS/android_prebuilts_gcc_linux-x86_arm_arm-ea
 git clone https://github.com/xiaomi-begonia-dev/android_packages_apps_ViPER4AndroidFX.git --depth 1 -b fourteen packages/apps/ViPER4AndroidFX
 git clone https://github.com/Chaitanyakm/vendor_bcr.git --depth 1 -b main vendor/bcr
 git clone https://gitlab.com/dpenra/android_vendor_xiaomi_mojito-leicacamera.git --depth 1 -b main vendor/xiaomi/mojito-leicacamera
-git clone https://github.com/dpenra/android_vendor_xiaomi_miuiapps.git --depth 1 -b main vendor/xiaomi/miuiapps
+git clone https://github.com/extra-application/vendor_xiaomi_miuiapps.git --depth 1 -b main vendor/xiaomi/miuiapps
 git clone https://github.com/extra-application/vendor_xiaomi_dynamicSpot.git --depth 1 -b main vendor/xiaomi/dynamicSpot
 git clone https://github.com/dpenra/android_packages_apps_Updater.git --depth 1 -b fifteen packages/apps/Updater
 

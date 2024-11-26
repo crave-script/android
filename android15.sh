@@ -71,3 +71,4 @@ git clone https://github.com/private-keys/vendor_lineage-priv_keys.git --depth 1
 . build/envsetup.sh
 # export OUT_DIR=/media/dpenra/romout/risingout
 riseup sunny user
+rise b

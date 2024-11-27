@@ -69,6 +69,6 @@ git clone https://github.com/dpenra/android_vendor_lineage.git --depth 1 -b fift
 git clone https://github.com/private-keys/vendor_lineage-priv_keys.git --depth 1 -b main vendor/lineage-priv/keys
 
 . build/envsetup.sh
-export OUT_DIR=/media/dpenra/romout/risingout
+# export OUT_DIR=/media/dpenra/romout/risingout
 riseup sunny user
 rise b

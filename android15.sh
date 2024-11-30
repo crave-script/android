@@ -4,7 +4,7 @@
 # set -e
 
 repo init -u https://github.com/RisingTechOSS/android -b fifteen --git-lfs
-# /opt/crave/resync.sh
+/opt/crave/resync.sh
 # repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j$(nproc --all)
 
 # Remove existing directories to avoid conflicts

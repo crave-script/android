@@ -2,7 +2,9 @@
 
 # Exit script on error
 # set -e
-
+rm -rf packages/apps/Updater
+rm -rf vendor/lineage
+rm -rf frameworks/native
 repo init -u https://github.com/RisingTechOSS/android -b fifteen --git-lfs
 # # /opt/crave/resync.sh
 repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j$(nproc --all)
@@ -26,10 +28,10 @@ repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j$(nproc 
 # rm -rf vendor/xiaomi/mojito-leicacamera
 # rm -rf vendor/xiaomi/miuiapps
 # rm -rf vendor/xiaomi/dynamicSpot
-# rm -rf packages/apps/Updater
-# rm -rf vendor/lineage
+rm -rf packages/apps/Updater
+rm -rf vendor/lineage
 # rm -rf vendor/lineage-priv/keys
-# rm -rf frameworks/native
+rm -rf frameworks/native
 
 # Clone device-specific repositories
 git clone https://github.com/dpenra/device_xiaomi_sunny.git -b lineage-22 device/xiaomi/sunny

@@ -8,28 +8,28 @@ https://github.com/RisingTechOSS/android -b fifteen --git-lfs
 repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j$(nproc --all)
 
 # Remove existing directories to avoid conflicts
-rm -rf device/xiaomi/sunny
-rm -rf device/qcom/common
-rm -rf device/qcom/qssi
-rm -rf device/xiaomi/sunny-kernel
-rm -rf vendor/xiaomi/sunny
-rm -rf vendor/qcom/common
-rm -rf vendor/qcom/opensource/core-utils
-rm -rf packages/apps/DisplayFeatures
-rm -rf packages/apps/KProfiles
-rm -rf hardware/xiaomi
-rm -rf hardware/qcom-caf/sm8150/media
-rm -rf prebuilts/gcc/linux-x86/aarch64/aarch64-elf
-rm -rf prebuilts/gcc/linux-x86/arm/arm-eabi
-rm -rf packages/apps/ViPER4AndroidFX
-rm -rf vendor/bcr
-rm -rf vendor/xiaomi/mojito-leicacamera
-rm -rf vendor/xiaomi/miuiapps
-rm -rf vendor/xiaomi/dynamicSpot
-rm -rf packages/apps/Updater
-rm -rf vendor/lineage
-rm -rf vendor/lineage-priv/keys
-rm -rf frameworks/native
+# rm -rf device/xiaomi/sunny
+# rm -rf device/qcom/common
+# rm -rf device/qcom/qssi
+# rm -rf device/xiaomi/sunny-kernel
+# rm -rf vendor/xiaomi/sunny
+# rm -rf vendor/qcom/common
+# rm -rf vendor/qcom/opensource/core-utils
+# rm -rf packages/apps/DisplayFeatures
+# rm -rf packages/apps/KProfiles
+# rm -rf hardware/xiaomi
+# rm -rf hardware/qcom-caf/sm8150/media
+# rm -rf prebuilts/gcc/linux-x86/aarch64/aarch64-elf
+# rm -rf prebuilts/gcc/linux-x86/arm/arm-eabi
+# rm -rf packages/apps/ViPER4AndroidFX
+# rm -rf vendor/bcr
+# rm -rf vendor/xiaomi/mojito-leicacamera
+# rm -rf vendor/xiaomi/miuiapps
+# rm -rf vendor/xiaomi/dynamicSpot
+# rm -rf packages/apps/Updater
+# rm -rf vendor/lineage
+# rm -rf vendor/lineage-priv/keys
+# rm -rf frameworks/native
 
 # Clone device-specific repositories
 git clone https://github.com/dpenra/device_xiaomi_sunny.git -b lineage-22 device/xiaomi/sunny

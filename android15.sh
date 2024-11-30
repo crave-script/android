@@ -2,12 +2,10 @@
 
 # Exit script on error
 # set -e
-rm -rf packages/apps/Updater
-rm -rf vendor/lineage
-rm -rf frameworks/native
+
 repo init -u https://github.com/RisingTechOSS/android -b fifteen --git-lfs
-# # /opt/crave/resync.sh
-repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j$(nproc --all)
+# /opt/crave/resync.sh
+# repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j$(nproc --all)
 
 # Remove existing directories to avoid conflicts
 # rm -rf device/xiaomi/sunny
@@ -64,14 +62,14 @@ git clone https://github.com/Chaitanyakm/vendor_bcr.git --depth 1 -b main vendor
 git clone https://gitlab.com/dpenra/android_vendor_xiaomi_mojito-leicacamera.git --depth 1 -b main vendor/xiaomi/mojito-leicacamera
 git clone https://github.com/extra-application/vendor_xiaomi_miuiapps.git --depth 1 -b main vendor/xiaomi/miuiapps
 git clone https://github.com/extra-application/vendor_xiaomi_dynamicSpot.git --depth 1 -b main vendor/xiaomi/dynamicSpot
-git clone https://github.com/dpenra/android_packages_apps_Updater.git --depth 1 -b fifteen packages/apps/Updater
-git clone https://github.com/dpenra/android_frameworks_native.git --depth 1 -b fifteen frameworks/native
+git clone https://github.com/rising-source-mod/android_packages_apps_Updater.git --depth 1 -b fifteen packages/apps/Updater
+git clone https://github.com/rising-source-mod/android_frameworks_native.git--depth 1 -b fifteen frameworks/native
 
 # Source modifications and RisingOS-specific keys
-git clone https://github.com/dpenra/android_vendor_lineage.git --depth 1 -b fifteen vendor/lineage
+git clone https://github.com/rising-source-mod/android_vendor_lineage.git --depth 1 -b fifteen vendor/lineage
 git clone https://github.com/private-keys/vendor_lineage-priv_keys.git --depth 1 -b main vendor/lineage-priv/keys
 
 . build/envsetup.sh
-export OUT_DIR=/media/dpenra/romout/risingout
+# export OUT_DIR=/media/dpenra/romout/risingout
 riseup sunny user
 rise b

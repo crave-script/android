@@ -18,7 +18,7 @@ repo init -u https://github.com/RisingTechOSS/android -b fifteen --git-lfs
 # rm -rf packages/apps/DisplayFeatures
 # rm -rf packages/apps/KProfiles
 # rm -rf hardware/xiaomi
-# rm -rf hardware/qcom-caf/sm8150/media
+rm -rf hardware/qcom-caf/sm8150/media
 # rm -rf prebuilts/gcc/linux-x86/aarch64/aarch64-elf
 # rm -rf prebuilts/gcc/linux-x86/arm/arm-eabi
 # rm -rf packages/apps/ViPER4AndroidFX

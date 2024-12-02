@@ -8,7 +8,7 @@ repo init -u https://github.com/RisingTechOSS/android -b fifteen --git-lfs
 # repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j$(nproc --all)
 
 # Remove existing directories to avoid conflicts
-# rm -rf device/xiaomi/sunny
+rm -rf device/xiaomi/sunny
 # rm -rf device/qcom/common
 # rm -rf device/qcom/qssi
 # rm -rf device/xiaomi/sunny-kernel

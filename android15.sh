@@ -21,11 +21,11 @@ rm -rf device/xiaomi/sunny
 rm -rf hardware/qcom-caf/sm8150/media
 # rm -rf prebuilts/gcc/linux-x86/aarch64/aarch64-elf
 # rm -rf prebuilts/gcc/linux-x86/arm/arm-eabi
-# rm -rf packages/apps/ViPER4AndroidFX
-# rm -rf vendor/bcr
+rm -rf packages/apps/ViPER4AndroidFX
+rm -rf vendor/bcr
 # rm -rf vendor/xiaomi/mojito-leicacamera
 # rm -rf vendor/xiaomi/miuiapps
-# rm -rf vendor/xiaomi/dynamicSpot
+rm -rf vendor/xiaomi/dynamicSpot
 rm -rf packages/apps/Updater
 rm -rf vendor/lineage
 # rm -rf vendor/lineage-priv/keys

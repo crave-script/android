@@ -17,7 +17,7 @@ rm -rf device/xiaomi/sunny
 # rm -rf vendor/qcom/opensource/core-utils
 # rm -rf packages/apps/DisplayFeatures
 # rm -rf packages/apps/KProfiles
-# rm -rf hardware/xiaomi
+rm -rf hardware/xiaomi
 rm -rf hardware/qcom-caf/sm8150/media
 # rm -rf prebuilts/gcc/linux-x86/aarch64/aarch64-elf
 # rm -rf prebuilts/gcc/linux-x86/arm/arm-eabi
@@ -49,7 +49,7 @@ git clone https://github.com/cyberknight777/android_packages_apps_DisplayFeature
 git clone https://github.com/KProfiles/android_packages_apps_Kprofiles.git --depth 1 -b main packages/apps/KProfiles
 
 # Clone hardware repositories
-git clone https://github.com/yaap/hardware_xiaomi.git --depth 1 -b fifteen hardware/xiaomi
+git clone https://github.com/dpenra/hardware_xiaomi.git --depth 1 -b fifteen hardware/xiaomi
 git clone https://github.com/yaap/hardware_qcom-caf_sm8150_media.git --depth 1 -b fifteen hardware/qcom-caf/sm8150/media
 
 # Clone prebuilt GCC toolchains

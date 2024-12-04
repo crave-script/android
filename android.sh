@@ -14,7 +14,7 @@ repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j$(nproc 
 # rm -rf device/qcom/common
 # rm -rf device/qcom/qssi
 # rm -rf device/xiaomi/sunny-kernel
-rm -rf vendor/xiaomi/sunny
+# rm -rf vendor/xiaomi/sunny
 # rm -rf vendor/qcom/common
 # rm -rf vendor/qcom/opensource/core-utils
 # rm -rf packages/apps/DisplayFeatures

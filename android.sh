@@ -3,7 +3,7 @@
 # Exit script on error
 # set -e
 
-# rm -rf frameworks/native
+timedatectl set-timezone UTC
 
 repo init -u https://github.com/RisingTechOSS/android -b fifteen --git-lfs
 # /opt/crave/resync.sh

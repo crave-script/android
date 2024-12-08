@@ -31,7 +31,7 @@ repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j$(nproc 
 # rm -rf packages/apps/Updater
 # rm -rf vendor/lineage
 # rm -rf vendor/lineage-priv/keys
-rm -rf frameworks/native
+# rm -rf frameworks/native
 
 # Clone device-specific repositories
 git clone https://github.com/dpenra/device_xiaomi_sunny.git -b lineage-22 device/xiaomi/sunny

@@ -31,7 +31,7 @@ repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j$(nproc 
 # rm -rf packages/apps/Updater
 # rm -rf vendor/lineage
 # rm -rf vendor/lineage-priv/keys
-# rm -rf frameworks/native
+rm -rf frameworks/native
 
 # Clone device-specific repositories
 git clone https://github.com/dpenra/device_xiaomi_sunny.git -b lineage-22 device/xiaomi/sunny
@@ -65,7 +65,7 @@ git clone https://gitlab.com/dpenra/android_vendor_xiaomi_mojito-leicacamera.git
 git clone https://github.com/extra-application/vendor_xiaomi_miuiapps.git --depth 1 -b main vendor/xiaomi/miuiapps
 git clone https://github.com/extra-application/vendor_xiaomi_dynamicSpot.git --depth 1 -b main vendor/xiaomi/dynamicSpot
 git clone https://github.com/rising-source-mod/android_packages_apps_Updater.git --depth 1 -b fifteen packages/apps/Updater
-# git clone https://github.com/rising-source-mod/android_frameworks_native.git --depth 1 -b fifteen frameworks/native
+git clone https://github.com/dpenra/android_frameworks_native.git --depth 1 -b fifteen frameworks/native
 
 # Source modifications and RisingOS-specific keys
 git clone https://github.com/rising-source-mod/android_vendor_lineage.git --depth 1 -b fifteen vendor/lineage

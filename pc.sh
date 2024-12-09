@@ -10,7 +10,7 @@ repo init -u https://github.com/RisingTechOSS/android -b fifteen --git-lfs
 repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j$(nproc --all)
 
 # Remove existing directories to avoid conflicts
-rm -rf device/xiaomi/sunny
+# rm -rf device/xiaomi/sunny
 # rm -rf device/qcom/common
 # rm -rf device/qcom/qssi
 # rm -rf device/xiaomi/sunny-kernel
@@ -71,16 +71,16 @@ git clone https://github.com/extra-application/vendor_xiaomi_dynamicSpot.git --d
 # git clone https://github.com/rising-source-mod/android_vendor_lineage.git --depth 1 -b fifteen vendor/lineage
 git clone https://github.com/private-keys/vendor_lineage-priv_keys.git --depth 1 -b main vendor/lineage-priv/keys
 
-cd vendor/lineage
-curl -s https://github.com/RisingTechOSS/android_vendor_lineage/commit/114e7aa0798e4f7bc0f8866c9979f9d5a2c72a66.patch | git am
-curl -s https://github.com/RisingTechOSS/android_vendor_lineage/commit/f8a153ad0138477c9cc2c57af95845d7d26ff1c3.patch | git am
-cd ../..
-cd packages/apps/Updater
-curl -s https://github.com/RisingTechOSS/android_packages_apps_Updater/commit/9812469a2340abac46cbd839d5057d58125d9664.patch | git am
-cd ../../..
-cd vendor/xiaomi/sunny
-curl -s https://github.com/PixelOS-Devices/vendor_xiaomi_sunny/commit/592925300f9cd3946f39035ea438745255a5aa74.patch | git am
-cd ../../..
+# cd vendor/lineage
+# curl -s https://github.com/RisingTechOSS/android_vendor_lineage/commit/114e7aa0798e4f7bc0f8866c9979f9d5a2c72a66.patch | git am
+# curl -s https://github.com/RisingTechOSS/android_vendor_lineage/commit/f8a153ad0138477c9cc2c57af95845d7d26ff1c3.patch | git am
+# cd ../..
+# cd packages/apps/Updater
+# curl -s https://github.com/RisingTechOSS/android_packages_apps_Updater/commit/9812469a2340abac46cbd839d5057d58125d9664.patch | git am
+# cd ../../..
+# cd vendor/xiaomi/sunny
+# curl -s https://github.com/PixelOS-Devices/vendor_xiaomi_sunny/commit/592925300f9cd3946f39035ea438745255a5aa74.patch | git am
+# cd ../../..
 
 . build/envsetup.sh
 export OUT_DIR=/media/dpenra/romout/risingout

@@ -68,8 +68,15 @@ git clone https://github.com/extra-application/vendor_xiaomi_dynamicSpot.git --d
 # git clone https://github.com/rising-source-mod/android_frameworks_native.git --depth 1 -b fifteen frameworks/native
 
 # Source modifications and RisingOS-specific keys
-#git clone https://github.com/rising-source-mod/android_vendor_lineage.git --depth 1 -b fifteen vendor/lineage
+# git clone https://github.com/rising-source-mod/android_vendor_lineage.git --depth 1 -b fifteen vendor/lineage
 git clone https://github.com/private-keys/vendor_lineage-priv_keys.git --depth 1 -b main vendor/lineage-priv/keys
+cd vendor/lineage
+curl -s https://github.com/RisingTechOSS/android_vendor_lineage/commit/114e7aa0798e4f7bc0f8866c9979f9d5a2c72a66.patch | git am
+curl -s https://github.com/RisingTechOSS/android_vendor_lineage/commit/f8a153ad0138477c9cc2c57af95845d7d26ff1c3.patch | git am
+cd ../..
+cd packages/apps/android_packages_apps_Updater
+curl -s https://github.com/RisingTechOSS/android_packages_apps_Updater/commit/9812469a2340abac46cbd839d5057d58125d9664.patch | git am
+cd ../../..
 
 . build/envsetup.sh
 # export OUT_DIR=/media/dpenra/romout/risingout

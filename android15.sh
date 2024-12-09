@@ -29,8 +29,8 @@ rm -rf vendor/bcr
 # rm -rf frameworks/native
 # must remove
 rm -rf hardware/qcom-caf/sm8150/media
-rm -rf vendor/lineage
-rm -rf packages/apps/Updater
+# rm -rf vendor/lineage
+# rm -rf packages/apps/Updater
 
 
 # Clone device-specific repositories

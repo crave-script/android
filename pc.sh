@@ -77,3 +77,4 @@ export BUILD_USERNAME=dpenra
 export BUILD_HOSTNAME=crave
 riseup sunny user
 rise b
+timedatectl set-timezone Asia/Kathmandu

@@ -3,7 +3,7 @@
 # Exit script on error
 # set -e
 
-# timedatectl set-timezone UTC
+timedatectl set-timezone UTC
 
 repo init -u https://github.com/RisingTechOSS/android -b fifteen --git-lfs
 # /opt/crave/resync.sh
@@ -87,5 +87,5 @@ export OUT_DIR=/media/dpenra/romout/risingout
 export BUILD_USERNAME=dpenra
 export BUILD_HOSTNAME=crave
 riseup sunny user
-# rise b
+rise b
 timedatectl set-timezone Asia/Kathmandu

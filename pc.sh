@@ -52,7 +52,7 @@ git clone https://github.com/dpenra/device_xiaomi_sunny.git -b lineage-22 device
 
 # Clone hardware repositories
 # git clone https://github.com/dpenra/hardware_xiaomi.git --depth 1 -b fifteen hardware/xiaomi
-# git clone https://github.com/yaap/hardware_qcom-caf_sm8150_media.git --depth 1 -b fifteen hardware/qcom-caf/sm8150/media
+git clone https://github.com/yaap/hardware_qcom-caf_sm8150_media.git --depth 1 -b fifteen hardware/qcom-caf/sm8150/media
 
 # Clone prebuilt GCC toolchains
 # git clone https://github.com/StatiXOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-elf.git --depth 1 -b 14.0.0 prebuilts/gcc/linux-x86/aarch64/aarch64-elf

@@ -82,6 +82,5 @@ curl -s https://github.com/PixelOS-Devices/vendor_xiaomi_sunny/commit/592925300f
 cd ../../..
 
 . build/envsetup.sh
-# export OUT_DIR=/media/dpenra/romout/risingout
 riseup sunny user
 rise b

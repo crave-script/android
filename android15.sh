@@ -29,8 +29,8 @@ repo init -u https://github.com/RisingTechOSS/android -b fifteen --git-lfs
 # rm -rf frameworks/native
 # must remove
 rm -rf hardware/qcom-caf/sm8150/media
-# rm -rf vendor/lineage
-# rm -rf packages/apps/Updater
+rm -rf vendor/lineage
+rm -rf packages/apps/Updater
 
 
 # Clone device-specific repositories
@@ -40,7 +40,7 @@ git clone https://github.com/AOSPA/android_device_qcom_qssi.git --depth 1 -b vau
 git clone https://github.com/dpenra/device_xiaomi_sunny-kernel.git --depth 1 -b fifteen device/xiaomi/sunny-kernel
 
 # Clone vendor repositories
-git clone https://github.com/PixelOS-Devices/vendor_xiaomi_sunny.git --depth 1 -b fourteen vendor/xiaomi/sunny
+git clone https://github.com/dpenra/vendor_xiaomi_sunny.git --depth 1 -b fifteen vendor/xiaomi/sunny
 rm vendor/xiaomi/sunny/proprietary/vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
 wget -P ./vendor/xiaomi/sunny/proprietary/vendor/lib64/ "https://gitlab.com/pnplusplus/android_vendor_xiaomi_mojito-leicacamera/-/raw/main/proprietary/vendor/lib64/android.hardware.camera.provider@2.4-legacy.so"
 git clone https://gitlab.com/yaosp/vendor_qcom_common.git --depth 1 -b fifteen vendor/qcom/common
@@ -64,22 +64,23 @@ git clone https://github.com/Chaitanyakm/vendor_bcr.git --depth 1 -b main vendor
 git clone https://gitlab.com/dpenra/android_vendor_xiaomi_mojito-leicacamera.git --depth 1 -b main vendor/xiaomi/mojito-leicacamera
 git clone https://github.com/extra-application/vendor_xiaomi_miuiapps.git --depth 1 -b main vendor/xiaomi/miuiapps
 git clone https://github.com/extra-application/vendor_xiaomi_dynamicSpot.git --depth 1 -b main vendor/xiaomi/dynamicSpot
-# git clone https://github.com/rising-source-mod/android_packages_apps_Updater.git --depth 1 -b fifteen packages/apps/Updater
+git clone https://github.com/rising-source-mod/android_packages_apps_Updater.git --depth 1 -b fifteen packages/apps/Updater
 # git clone https://github.com/rising-source-mod/android_frameworks_native.git --depth 1 -b fifteen frameworks/native
 
 # Source modifications and RisingOS-specific keys
-# git clone https://github.com/rising-source-mod/android_vendor_lineage.git --depth 1 -b fifteen vendor/lineage
+git clone https://github.com/rising-source-mod/android_vendor_lineage.git --depth 1 -b fifteen vendor/lineage
 git clone https://github.com/private-keys/vendor_lineage-priv_keys.git --depth 1 -b main vendor/lineage-priv/keys
-cd vendor/lineage
-curl -s https://github.com/RisingTechOSS/android_vendor_lineage/commit/114e7aa0798e4f7bc0f8866c9979f9d5a2c72a66.patch | git am
-curl -s https://github.com/RisingTechOSS/android_vendor_lineage/commit/f8a153ad0138477c9cc2c57af95845d7d26ff1c3.patch | git am
-cd ../..
-cd packages/apps/Updater
-curl -s https://github.com/RisingTechOSS/android_packages_apps_Updater/commit/9812469a2340abac46cbd839d5057d58125d9664.patch | git am
-cd ../../..
-cd vendor/xiaomi/sunny
-curl -s https://github.com/PixelOS-Devices/vendor_xiaomi_sunny/commit/592925300f9cd3946f39035ea438745255a5aa74.patch | git am
-cd ../../..
+
+# cd vendor/lineage
+# curl -s https://github.com/RisingTechOSS/android_vendor_lineage/commit/114e7aa0798e4f7bc0f8866c9979f9d5a2c72a66.patch | git am
+# curl -s https://github.com/RisingTechOSS/android_vendor_lineage/commit/f8a153ad0138477c9cc2c57af95845d7d26ff1c3.patch | git am
+# cd ../..
+# cd packages/apps/Updater
+# curl -s https://github.com/RisingTechOSS/android_packages_apps_Updater/commit/9812469a2340abac46cbd839d5057d58125d9664.patch | git am
+# cd ../../..
+# cd vendor/xiaomi/sunny
+# curl -s https://github.com/PixelOS-Devices/vendor_xiaomi_sunny/commit/592925300f9cd3946f39035ea438745255a5aa74.patch | git am
+# cd ../../..
 
 . build/envsetup.sh
 riseup sunny user

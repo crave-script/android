@@ -5,7 +5,6 @@
 
 timedatectl set-timezone UTC
 
-
 rm -rf packages/apps/Updater
 rm -rf vendor/lineage
 
